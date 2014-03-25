@@ -61,7 +61,12 @@
     <!-- Your scripts here? -->
     <!-- Your scripts here? -->
     <!-- Your scripts here? -->
-
+     <script type="text/javascript">
+     socket.get('/user',{}, function (users) { console.log(users);});
+     socket.on('message', function (message){
+    console.log("Got message", message);
+  });
+    </script>
 
     <!--
 
